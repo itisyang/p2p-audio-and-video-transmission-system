@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>294</width>
+    <height>416</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="2" column="0">
+     <widget class="QPushButton" name="init_p2p_pushButton">
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+    color: rgb(255, 255, 255);
+    background-color: rgb(167, 205, 255);
+    border:none;
+    padding: 3px;
+    font-family: &quot;Verdana&quot;;
+
+    text-align: center;
+}
+QPushButton:pressed
+{
+    background-color: rgb(85, 170, 255);
+    text-align: right;
+    padding-right: 20px;
+    font-weight:100
+}</string>
+      </property>
+      <property name="text">
+       <string>init</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QPushButton" name="start_pushButton">
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+    color: rgb(255, 255, 255);
+    background-color: rgb(167, 205, 255);
+    border:none;
+    padding: 3px;
+    font-family: &quot;Verdana&quot;;
+}
+QPushButton:pressed
+{
+    background-color: rgb(85, 170, 255);
+    padding-right: 20px;
+    font-weight:100
+}</string>
+      </property>
+      <property name="text">
+       <string>start</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" rowspan="2" colspan="2">
+     <widget class="QLabel" name="play_label">
+      <property name="frameShape">
+       <enum>QFrame::Panel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionExit"/>
+  </widget>
+  <action name="actionExit">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
